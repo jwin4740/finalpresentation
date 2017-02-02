@@ -145,6 +145,32 @@ i {
     margin-bottom: 20px;
 }
 
-/* TO-DO- 
-MEDIA QUERIES FOR MINOR TWEAKING FOR MOBILE VIEW
+/*  
+MEDIA QUERIES FOR MOBILE VIEW
 */
+
+@media (max-width: 500px) {
+    #map {
+        border: solid 2px white;
+        width: 280px;
+        height: 280px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .weather {
+        margin-left: 20px;
+    }
+ 
+    .weatherStats {
+        margin-left: 25px;
+    }
+ 
+    #right-panel {
+        width: 310px;
+    }
+    #tracklistcontainer {
+       width: 310px;
+    }
+ 
+}
+

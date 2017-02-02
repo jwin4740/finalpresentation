@@ -55,7 +55,7 @@ var songLengthTotal = 0;
 var analyticsData = {};
 
 // Trying to get the accordion to be collapsed on initial display ********** check this.
-$("#accordion").collapse("hide");
+// $("#accordion").collapse("hide");
 
 // ******** Google maps API code ********
 // Google maps function to get map and calls directionDisplay
@@ -98,7 +98,7 @@ function initMap() {
 
 } // End of google map display
 
-$('#toggletraffic').on("click", function() {
+$('#toggleTraffic').on("click", function() {
     trafficLayer.setMap(map);
 });
 
@@ -148,14 +148,14 @@ $(".submit").on("click", function(e) {
     e.preventDefault();
     $("#right-panel").empty();
     initMap();
-    $("form").hide();
+    $("#locationInputForm").hide();
     $("h3").hide();
     // $("#collapse1").addClass("in");
 });
 
 $('#myModal').on('shown.bs.modal', function() {
     $('#myInput').focus()
-})
+});
 
 
 
