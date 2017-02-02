@@ -54,8 +54,8 @@ var songLengthTotal = 0;
 // To store artist destination and timestamp for data analytics
 var analyticsData = {};
 
-// Trying to get the accordion to be collapsed on initial display ********** check this.
-// $("#accordion").collapse("hide");
+// Getting accordion to be collapsed on initial display 
+$("#collapse1").removeClass("in");
 
 // ******** Google maps API code ********
 // Google maps function to get map and calls directionDisplay
@@ -147,10 +147,11 @@ $(".submit").on("click", function(e) {
     $('#myModal').modal('show');
     e.preventDefault();
     $("#right-panel").empty();
+    $("#collapse1").addClass("in");
     initMap();
     $("#locationInputForm").hide();
     $("h3").hide();
-    // $("#collapse1").addClass("in");
+
 });
 
 $('#myModal').on('shown.bs.modal', function() {
