@@ -145,6 +145,21 @@ i {
     margin-bottom: 20px;
 }
 
+/*
+.footer {
+    border-top: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    
+}*/
+
+footer {
+    background-color: rgba(0,0,0,0.6);
+    height: 60px;
+    padding: 15px;
+}
 /*  
 MEDIA QUERIES FOR MOBILE VIEW
 */
